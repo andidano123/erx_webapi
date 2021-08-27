@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA83122A-9E94-4533-8C1C-12EBAFC10446}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERX.Services</RootNamespace>
+    <AssemblyName>ERX.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dtos\AnswerMoreInfo.cs" />
+    <Compile Include="Dtos\QuestionTypeInfo.cs" />
+    <Compile Include="Dtos\QuestionCategoryInfo.cs" />
+    <Compile Include="Dtos\QuestionInfo.cs" />
+    <Compile Include="Dtos\AccountInfo.cs" />
+    <Compile Include="Dtos\DbResult.cs" />
+    <Compile Include="Helpers\Db\DbHelperExtensions.cs" />
+    <Compile Include="Helpers\Db\Pager.cs" />
+    <Compile Include="Providers\AccountsDataProvider.cs" />
+    <Compile Include="Providers\Factory\ClassFactory.cs" />
+    <Compile Include="Providers\Factory\ProxyFactory.cs" />
+    <Compile Include="Providers\Interfaces\IAccountsDataProvider.cs" />
+    <Compile Include="ServiceManage.cs" />
+    <Compile Include="Helpers\Db\BaseDataProvider.cs" />
+    <Compile Include="Helpers\Db\DbHelper.cs" />
+    <Compile Include="Helpers\Db\IDbProvider.cs" />
+    <Compile Include="Helpers\Db\ITableProvider.cs" />
+    <Compile Include="Helpers\Db\SqlServerProvider.cs" />
+    <Compile Include="Helpers\Db\TableProvider.cs" />
+    <Compile Include="Helpers\Message\IMessage.cs" />
+    <Compile Include="Helpers\Message\Message.cs" />
+    <Compile Include="Helpers\Message\MessageHelper.cs" />
+    <Compile Include="Helpers\Pager\PagerManager.cs" />
+    <Compile Include="Helpers\Pager\PagerParameters.cs" />
+    <Compile Include="Helpers\Pager\PagerSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERX.Utils\ERX.Utils.csproj">
+      <Project>{ccba434b-5529-4e2e-a408-6039bd19dcf4}</Project>
+      <Name>HGF.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

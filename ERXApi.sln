@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERX.Api", "ERXApi\ERX.Api.csproj", "{027A65C1-1D60-4968-85A1-917CA112C120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERX.Services", "ERX.Application\ERX.Services.csproj", "{DA83122A-9E94-4533-8C1C-12EBAFC10446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERX.Utils", "ERX.Utils\ERX.Utils.csproj", "{CCBA434B-5529-4E2E-A408-6039BD19DCF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{027A65C1-1D60-4968-85A1-917CA112C120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027A65C1-1D60-4968-85A1-917CA112C120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027A65C1-1D60-4968-85A1-917CA112C120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027A65C1-1D60-4968-85A1-917CA112C120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA83122A-9E94-4533-8C1C-12EBAFC10446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA83122A-9E94-4533-8C1C-12EBAFC10446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA83122A-9E94-4533-8C1C-12EBAFC10446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA83122A-9E94-4533-8C1C-12EBAFC10446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBA434B-5529-4E2E-A408-6039BD19DCF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBA434B-5529-4E2E-A408-6039BD19DCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBA434B-5529-4E2E-A408-6039BD19DCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBA434B-5529-4E2E-A408-6039BD19DCF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3858293C-A999-49CF-8208-04F074A4D69F}
+	EndGlobalSection
+EndGlobal
