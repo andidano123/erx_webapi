@@ -43,6 +43,7 @@ namespace ERXApi.Controllers
             // Already Exists, Continue or Show result
             if (result.IsSuccess)
             {
+
                 //Finish answering
                 if (result.Data.AnswerStatus == 1)
                 {                   
